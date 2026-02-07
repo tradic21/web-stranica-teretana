@@ -1,0 +1,39 @@
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+.footer h5 {
+  color: #ff9400;
+  font-weight: bold;
+}
+.footer a {
+  color: #ff9400;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer-logo-container {
+  margin-bottom: 50px !important;
+}
+.footer-logo {
+  width: 50px !important;
+  margin-right: 0px;
+  vertical-align: middle;
+}
+.footer-logo-text {
+  font-size: 29px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.footer-logo-text .fit {
+  color: #ff9400;
+}
+.footer-logo-text .zone {
+  color: #ffffff;
+}
+.footer .col-md-3 img {
+  width: 100px;
+  height: auto;
+}

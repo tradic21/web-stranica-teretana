@@ -1,0 +1,111 @@
+.banner-container {
+  background-image: url("slike/kontakt\ 1.png") !important;
+}
+
+.content-section {
+  padding: 60px 0;
+}
+
+.fit2 {
+  color: #ff9400;
+  font-weight: bold;
+  font-size: 45px;
+}
+.zone2 {
+  color: #000;
+  font-size: 50px;
+  margin-bottom: 5px;
+  font-weight: lighter;
+}
+.fitzone_container {
+  padding-top: 42px;
+  margin-left: -45px;
+}
+.barbell {
+  margin-left: 10px;
+  width: 110px;
+  height: 110px;
+}
+.orange_stile {
+  color: #ff9400;
+  font-weight: bold;
+}
+
+.contact_info {
+  margin-left: 68px;
+  margin-bottom: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.form_input {
+  margin-bottom: 15px;
+  background-color: #dbdbdb;
+  margin-right: 52px;
+  border: none;
+  border-radius: 1px;
+}
+.form-control::placeholder {
+  color: #6c757d;
+  font-style: italic;
+}
+.form_input::placeholder {
+  font-style: italic;
+  color: #827d7d;
+}
+.form-control {
+  background-color: #f8f9fa;
+}
+.form_poruka {
+  height: 120px;
+}
+.btn-custom {
+  background-color: #ff9400;
+  border: none;
+  width: 100px;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn-custom:hover,
+.btn-custom:active,
+.btn-custom:focus {
+  background-color: #e68900 !important;
+  border-color: #e68900 !important;
+  color: white;
+  box-shadow: none;
+  outline: none;
+  font-weight: bold;
+}
+
+.mb-extra {
+  margin-bottom: 60px;
+}
+#map {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+
+  width: auto;
+}
+
+.line {
+  height: 4px;
+  width: 100%;
+  background-color: #ff9400;
+}
+iframe {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  #map {
+    margin: auto;
+  }
+}
+.contact_info_map {
+  padding-left: 68px;
+}

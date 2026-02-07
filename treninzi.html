@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <title>FitZone</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./treninzi.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="./tekst.css">
+
+    <script src="prijava.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="./Index.html">
+        <img src="ikone/utezi_logo.png" alt="Utezi logo">
+        <span class="fit">Fit</span><span class="zone">Zone</span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./Index.html"> Početna </a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a
+              class="nav-link dropdown-toggle"
+              href="./Treninzi.html"
+              id="treninziDropdown"
+              role="button"
+            >
+              Treninzi
+            </a>
+            <div class="dropdown-menu" aria-labelledby="treninziDropdown">
+              <a class="dropdown-item" href="./treninzi.html#Grupni">Grupni</a>
+              <a class="dropdown-item" href="./treninzi.html#Individualni">Individualni</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./clanstvo.html"> Članstvo </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="./posebna_ponuda.html"
+              id="ponudaDropdown"
+              role="button"
+            >
+              Posebna ponuda
+            </a>
+            <div class="dropdown-menu" aria-labelledby="ponudaDropdown">
+              <a class="dropdown-item" href="./posebna_ponuda.html#Program_za_majke">Programi za majke s djecom</a>
+              <a class="dropdown-item" href="./posebna_ponuda.html#sauna">Relaksacija</a>
+              <a class="dropdown-item" href="./posebna_ponuda.html#food_program">Zdravi kutak</a>
+              <a class="dropdown-item" href="./posebna_ponuda.html#massage">Masaža</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="./Onama.html"
+              id="onamaDropdown"
+              role="button"
+            >
+              O nama
+            </a>
+            <div class="dropdown-menu" aria-labelledby="onamaDropdown">
+              <a class="dropdown-item" href="./Onama.html#Studio">O studiju</a>
+              <a class="dropdown-item" href="./Onama.html#Treneri">Naši treneri</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="./kontakt.html"
+              id="kontaktDropdown"
+              role="button"
+            >
+              Kontakt
+            </a>
+            <div class="dropdown-menu" aria-labelledby="kontaktDropdown">
+              <a class="dropdown-item" href="./kontakt.html#kontakt">Kontakt informacije</a>
+              <a class="dropdown-item" href="./kontakt.html#map">Lokacija</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <img src="ikone/login.png" alt="Login" id="prijava">
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="banner-container">
+      <div class="banner-text">
+        <h1>Treninzi</h1>
+        <p>Crossfit, Pilates, Zumba i mnogi drugi</p>
+      </div>
+    </div>
+
+    <div class="group-training-section container">
+      <h2>Grupni treninzi</h2>
+      <div class="row">
+        <div class="col-md-6 training-item">
+          <div class="training-icon-wrapper">
+            <img src="ikone/crossfit.png" alt="Crossfit" class="training-icon">
+          </div>
+          <div class="training-content">
+            <h3>Crossfit</h3>
+            <p>
+              CrossFit je visoko intenzivni trening koji kombinira elemente
+              snage, izdržljivosti, brzine, agilnosti, fleksibilnosti i
+              kondicije. Ovaj dinamični program vježbanja obuhvaća raznolike
+              pokrete poput dizanja utega, sklekova, čučnjeva i kardio vježbi
+              kako bi se postigla potpuna tjelesna kondicija.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 training-item">
+          <div class="training-icon-wrapper">
+            <img src="ikone/pilates.png" alt="Pilates" class="training-icon">
+          </div>
+          <div class="training-content">
+            <h3>Pilates</h3>
+            <p>
+              Pilates je sistem vježbanja koji se fokusira na jačanje mišića,
+              poboljšanje fleksibilnosti i unapređenje držanja tijela. Koristeći
+              kontrolirane pokrete i disanje, Pilates razvija snagu i stabilnost
+              mišića trupa, poboljšava ravnotežu i povećava svijest o tijelu.
+              Ova efikasna metoda vježbanja prilagođena je svim dobnim skupinama
+              i fitness razinama, nudeći brojne koristi za tijelo i um.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 training-item">
+          <div class="training-icon-wrapper">
+            <img src="ikone/zumba.png" alt="Zumba" class="training-icon">
+          </div>
+          <div class="training-content">
+            <h3>Zumba</h3>
+            <p>
+              Zumba je zabavni trening inspiriran plesom koji kombinira latino
+              ritmove s kardio vježbama. Ovaj dinamični program vježbanja donosi
+              energiju, poboljšava kondiciju, sagorijeva kalorije i potiče
+              osjećaj radosti i zabave.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 training-item">
+          <div class="training-icon-wrapper">
+            <img src="ikone/female-fitness.png" alt="Aerobik" class="training-icon">
+          </div>
+          <div class="training-content">
+            <h3>Aerobik</h3>
+            <p>
+              Aerobik je zabavan i energičan trening koji kombinira kardio
+              vježbe s plesnim elementima. Koristeći ritmičke pokrete, aerobik
+              poboljšava kondiciju, koordinaciju i fleksibilnost, dok
+              istovremeno sagorijeva kalorije i jača srce.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 training-item">
+          <div class="training-icon-wrapper">
+            <img src="ikone/yoga-pose.png" alt="Yoga" class="training-icon">
+          </div>
+          <div class="training-content">
+            <h3>Yoga</h3>
+            <p>
+              Yoga je drevna praksa koja kombinira fizičke položaje, disanje i
+              meditaciju kako bi se postigla harmonija tijela i uma. Ova
+              holistička disciplina pomaže u poboljšanju fleksibilnosti, jačanju
+              mišića, smanjenju stresa i poticanju opuštanja.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="schedule-table-container" id="Grupni">
+      <div class="container schedule-table">
+        <h2 class="center_it">Tablica treninga</h2>
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              href="#"
+              data-target="#all-sessions"
+              data-toggle="tab"
+              >Svi treninzi</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              data-target="#crossfit-sessions"
+              data-toggle="tab"
+              >Crossfit</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              data-target="#pilates-sessions"
+              data-toggle="tab"
+              >Pilates</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              data-target="#zumba-sessions"
+              data-toggle="tab"
+              >Zumba</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              data-target="#aerobik-sessions"
+              data-toggle="tab"
+              >Aerobik</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              data-target="#yoga-sessions"
+              data-toggle="tab"
+              >Yoga</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div id="all-sessions" class="tab-pane active">
+            <div class="row mt-4">
+              <div class="col-md-2">
+                <div class="day-header">Ponedjeljak</div>
+                <div class="session completed">
+                  <strong>Crossfit</strong><br>
+                  Lana Lanić<br>
+                  9:00<br>
+                  Završilo
+                </div>
+                <div class="session booked">
+                  <strong>Zumba</strong><br>
+                  Lana Lanić<br>
+                  10:00<br>
+                  Popunjeno
+                </div>
+                <div class="session empty"></div>
+                <div class="session completed">
+                  <strong>Pilates</strong><br>
+                  Lana Lanić<br>
+                  13:00<br>
+                  Završilo
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Utorak</div>
+                <div class="session completed">
+                  <strong>Pilates</strong><br>
+                  Zdravko Zdravkić<br>
+                  8:00<br>
+                  Završilo
+                </div>
+                <div class="session empty"></div>
+                <div class="session">
+                  <strong>Zumba</strong><br>
+                  Lana Lanić<br>
+                  10:00<br>
+                  <a href="#">Rezerviraj</a>
+                </div>
+                <div class="session">
+                  <strong>Yoga</strong><br>
+                  Ivo Ivić<br>
+                  13:00<br>
+                  <a href="#">Rezerviraj</a>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Srijeda</div>
+                <div class="session">
+                  <strong>Yoga</strong><br>
+                  Ivo Ivić<br>
+                  9:00<br>
+                  <a href="#">Rezerviraj</a>
+                </div>
+                <div class="session booked">
+                  <strong>Aerobik</strong><br>
+                  Lana Lanić<br>
+                  10:00<br>
+                  Popunjeno
+                </div>
+                <div class="session empty"></div>
+                <div class="session">
+                  <strong>Yoga</strong><br>
+                  Ivo Ivić<br>
+                  13:00<br>
+                  <a href="#">Rezerviraj</a>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Četvrtak</div>
+                <div class="session">
+                  <strong>Crossfit</strong><br>
+                  Ivo Ivić<br>
+                  9:00<br>
+                  <a href="#">Rezerviraj</a>
+                </div>
+                <div class="session booked">
+                  <strong>Yoga</strong><br>
+                  Ivo Ivić<br>
+                  10:00<br>
+                  Popunjeno
+                </div>
+                <div class="session booked">
+                  <strong>Pilates</strong><br>
+                  Zdravko Zdravkić<br>
+                  12:00<br>
+                  Popunjeno
+                </div>
+                <div class="session empty"></div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Petak</div>
+                <div class="session booked">
+                  <strong>Yoga</strong><br>
+                  Ivo Ivić<br>
+                  8:00<br>
+                  Popunjeno
+                </div>
+                <div class="session booked">
+                  <strong>Yoga</strong><br>
+                  Ivo Ivić<br>
+                  10:00<br>
+                  Popunjeno
+                </div>
+                <div class="session empty"></div>
+                <div class="session empty"></div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Subota</div>
+                <div class="session">
+                  <strong>Pilates</strong><br>
+                  Zdravko Zdravkić<br>
+                  8:00<br>
+                  <a href="#">Rezerviraj</a>
+                </div>
+                <div class="session">
+                  <strong>Pilates</strong><br>
+                  Zdravko Zdravkić<br>
+                  10:00<br>
+                  <a href="#">Rezerviraj</a>
+                </div>
+                <div class="session empty"></div>
+                <div class="session">
+                  <strong>Aerobik</strong><br>
+                  Lana Lanić<br>
+                  13:00<br>
+                  <a href="#">Rezerviraj</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="crossfit-sessions" class="tab-pane fade">
+            <div class="row mt-4">
+              <div class="col-md-2">
+                <div class="day-header">Ponedjeljak</div>
+                <div class="session completed">
+                  <strong>Crossfit</strong><br>
+                  Lana Lanić<br>
+                  9:00<br>
+                  Završilo
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Utorak</div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Srijeda</div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Četvrtak</div>
+                <div class="session">
+                  <strong>Crossfit</strong><br>
+                  Ivo Ivić<br>
+                  9:00<br>
+                  <a href="#">Rezerviraj</a>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Petak</div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Subota</div>
+              </div>
+            </div>
+          </div>
+
+          <div id="pilates-sessions" class="tab-pane fade">
+            <div class="row mt-4">
+              <div class="col-md-2">
+                <div class="day-header">Ponedjeljak</div>
+                <div class="session completed">
+                  <strong>Pilates</strong><br>
+                  Lana Lanić<br>
+                  13:00<br>
+                  Završilo
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Utorak</div>
+                <div class="session completed">
+                  <strong>Pilates</strong><br>
+                  Zdravko Zdravkić<br>
+                  8:00<br>
+                  Završilo
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Srijeda</div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Četvrtak</div>
+                <div class="session booked">
+                  <strong>Pilates</strong><br>
+                  Zdravko Zdravkić<br>
+                  12:00<br>
+                  Popunjeno
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Petak</div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Subota</div>
+                <div class="session">
+                  <strong>Pilates</strong><br>
+                  Zdravko Zdravkić<br>
+                  8:00<br>
+                  <a href="#">Rezerviraj</a>
+                </div>
+                <div class="session">
+                  <strong>Pilates</strong><br>
+                  Zdravko Zdravkić<br>
+                  10:00<br>
+                  <a href="#">Rezerviraj</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="zumba-sessions" class="tab-pane fade">
+            <div class="row mt-4">
+              <div class="col-md-2">
+                <div class="day-header">Ponedjeljak</div>
+                <div class="session booked">
+                  <strong>Zumba</strong><br>
+                  Lana Lanić<br>
+                  10:00<br>
+                  Popunjeno
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Utorak</div>
+                <div class="session">
+                  <strong>Zumba</strong><br>
+                  Lana Lanić<br>
+                  10:00<br>
+                  <a href="#">Rezerviraj</a>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Srijeda</div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Četvrtak</div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Petak</div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Subota</div>
+              </div>
+            </div>
+          </div>
+
+          <div id="aerobik-sessions" class="tab-pane fade">
+            <div class="row mt-4">
+              <div class="col-md-2">
+                <div class="day-header">Ponedjeljak</div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Utorak</div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Srijeda</div>
+                <div class="session booked">
+                  <strong>Aerobik</strong><br>
+                  Lana Lanić<br>
+                  10:00<br>
+                  Popunjeno
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Četvrtak</div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Petak</div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Subota</div>
+                <div class="session">
+                  <strong>Aerobik</strong><br>
+                  Lana Lanić<br>
+                  13:00<br>
+                  <a href="#">Rezerviraj</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="yoga-sessions" class="tab-pane fade">
+            <div class="row mt-4">
+              <div class="col-md-2">
+                <div class="day-header">Ponedjeljak</div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Utorak</div>
+                <div class="session">
+                  <strong>Yoga</strong><br>
+                  Ivo Ivić<br>
+                  13:00<br>
+                  <a href="#">Rezerviraj</a>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Srijeda</div>
+                <div class="session">
+                  <strong>Yoga</strong><br>
+                  Ivo Ivić<br>
+                  9:00<br>
+                  <a href="#">Rezerviraj</a>
+                </div>
+                <div class="session">
+                  <strong>Yoga</strong><br>
+                  Ivo Ivić<br>
+                  13:00<br>
+                  <a href="#">Rezerviraj</a>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Četvrtak</div>
+                <div class="session booked">
+                  <strong>Yoga</strong><br>
+                  Ivo Ivić<br>
+                  10:00<br>
+                  Popunjeno
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Petak</div>
+                <div class="session booked">
+                  <strong>Yoga</strong><br>
+                  Ivo Ivić<br>
+                  9:00<br>
+                  Popunjeno
+                </div>
+                <div class="session booked">
+                  <strong>Yoga</strong><br>
+                  Ivo Ivić<br>
+                  10:00<br>
+                  Popunjeno
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="day-header">Subota</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="individual-training-section-wrapper" id="Individualni">
+      <div class="individual-training-section container">
+        <h2>Individualni treninzi</h2>
+        <p>
+          Iskoristite prednosti individualnih treninga s našim vrhunskim
+          trenerima u teretani! Bez obzira jeste li početnik ili iskusni
+          vježbač, naši osobni treneri prilagođavaju treninge vašim ciljevima,
+          željama i trenutnoj razini kondicije.
+        </p>
+        <p>
+          Naši treneri će vam pomoći postići vaše ciljeve brže i učinkovitije,
+          bez obzira jeste li fokusirani na mršavljenje, izgradnju mišića,
+          poboljšanje kondicije ili rehabilitaciju nakon ozljede. Individualni
+          treninzi omogućuju vam potpunu pažnju trenera, prilagođene vježbe i
+          motivaciju koja će vas gurati naprijed.
+        </p>
+        <p>
+          Javite nam se i rezervirajte svoj individualni trening kako biste
+          započeli put prema boljoj formi i zdravijem načinu života!
+        </p>
+        <button class="btn btn-custom">Kontaktirajte nas</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-4 footer-logo-container">
+            <img src="ikone/utezi_logo.png" alt="FitZone Logo" class="footer-logo">
+            <span class="footer-logo-text">
+              <span class="fit">Fit</span><span class="zone">Zone</span>
+            </span>
+          </div>
+          <div class="col-md-3">
+            <h5>Radno vrijeme</h5>
+            <p>
+              Pon - Pet od 6.30 - 22:00<br>
+              Sub: 09:00 - 20:00<br>
+              Ned: 16:00 - 20:00
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5>Kontakt</h5>
+            <p>
+              Email: <a href="mailto:FitZone@gmail.com">FitZone@gmail.com</a><br>
+              Telefon: (+385) 12 345 6789<br>
+              Adresa: Zagrebačka 12<br>
+              Mreže: <a href="#">Facebook</a> | <a href="#">Instagram</a>
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5>Informacije</h5>
+            <p>
+              <a href="#">Prigovori</a><br>
+              <a href="#">FAQ</a><br>
+              <a href="#">Privacy Policy</a><br>
+              © 2024 Sva prava pridržana
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5>Suradnici</h5>
+            <img src="slike/polleo.jpg" alt="Polleo" class="partner-logo"><br>
+            <img src="slike/Gymbeam.jpg" alt="GymBeam" class="mt-2 partner-logo">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="treninzi.js"></script>
+  </body>
+</html>

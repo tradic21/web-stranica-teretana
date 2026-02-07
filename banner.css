@@ -1,0 +1,43 @@
+.banner-image {
+  width: 100%;
+  height: auto;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+.banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background-image: url("./slike/confident-sportswoman-with-dumbbell-dark.jpg");
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  color: white;
+  text-align: center;
+}
+
+.banner-text {
+  font-size: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
+  margin-left: -700px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  .banner-text {
+    font-size: 45px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-text {
+    font-size: 40px;
+  }
+}

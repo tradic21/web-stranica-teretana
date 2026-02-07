@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <title>FitZone</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="tekst.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="./Index.html">
+        <img src="ikone/utezi_logo.png" alt="Utezi logo">
+        <span class="fit">Fit</span><span class="zone">Zone</span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./Index.html"> Početna </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="./Treninzi.html"
+              id="treninziDropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Treninzi
+            </a>
+            <div class="dropdown-menu" aria-labelledby="treninziDropdown">
+              <a class="dropdown-item" href="./treninzi.html#Grupni">Grupni</a>
+              <a class="dropdown-item" href="./treninzi.html#Individualni">Individualni</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./clanstvo.html"> Članstvo </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="./posebna_ponuda.html"
+              id="ponudaDropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Posebna ponuda
+            </a>
+            <div class="dropdown-menu" aria-labelledby="ponudaDropdown">
+              <a class="dropdown-item" href="./posebna_ponuda.html#Program_za_majke">Programi za majke s djecom</a>
+              <a class="dropdown-item" href="./posebna_ponuda.html#sauna">Relaksacija</a>
+              <a class="dropdown-item" href="./posebna_ponuda.html#food_program">Zdravi kutak</a>
+              <a class="dropdown-item" href="./posebna_ponuda.html#massage">Masaža</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="./Onama.html"
+              id="onamaDropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              O nama
+            </a>
+            <div class="dropdown-menu" aria-labelledby="onamaDropdown">
+              <a class="dropdown-item" href="./Onama.html#Studio">O studiju</a>
+              <a class="dropdown-item" href="./Onama.html#Treneri">Naši treneri</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="./kontakt.html"
+              id="kontaktDropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Kontakt
+            </a>
+            <div class="dropdown-menu" aria-labelledby="kontaktDropdown">
+              <a class="dropdown-item" href="./kontakt.html#kontakt">Kontakt informacije</a>
+              <a class="dropdown-item" href="./kontakt.html#map">Lokacija</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <img src="ikone/login.png" alt="Login" id="prijava">
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div
+      id="carouselFitZone"
+      class="carousel slide banner-container"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="10000">
+          <img
+            src="slike/confident-sportswoman-with-dumbbell-dark.jpg"
+            class="d-block w-100 banner-image"
+            alt="confident sportswoman with dumbbell"
+          >
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Snaga. Izdržljivost. Uspjeh.</h1>
+            <h1>Vaša teretana za promjenu.</h1>
+          </div>
+        </div>
+        <div class="carousel-item" data-interval="10000">
+          <img
+            src="slike/bodybuilder-training-arm-with-resistance-band.jpg"
+            class="d-block w-100 banner-image"
+            alt="young fitness man studio"
+          >
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Ostvarite svoje ciljeve.</h1>
+          </div>
+        </div>
+        <div class="carousel-item" data-interval="10000">
+          <img
+            src="slike/muscular-sportsman-training-with-ropes.jpg"
+            class="d-block w-100 banner-image"
+            alt="woman training gym"
+          >
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Pridružite nam se danas.</h1>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-target="#carouselFitZone"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-target="#carouselFitZone"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </button>
+    </div>
+
+    <div class="banner-container-static">
+      <div class="banner-text">
+        <h1>
+          Snaga. Izdržljivost. Uspjeh. <br>
+          Vaša teretana za promjenu.
+        </h1>
+      </div>
+    </div>
+
+    <div class="container content-section">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>DOBRODOŠLI U FITZONE</h2>
+          <h3>O FitZoneu</h3>
+          <p>
+            FitZone je moderno opremljen fitness centar u kojem se susreću
+            inovativna tehnologija i profesionalni treneri. S prostranim
+            dvoranama, raznolikom ponudom grupnih treninga i vrhunskom opremom,
+            FitZone pruža sve što vam je potrebno za ostvarivanje vaših fitness
+            ciljeva.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img
+            src="slike/female-athlete-isolated.jpg"
+            alt="FitZone slika"
+            class="img-fluid"
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="review-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 review-text">
+            <h2>Što kažu naši klijenti</h2>
+            <div class="review">
+              <h4>Toma Novak</h4>
+              <p><strong>KLIJENT</strong></p>
+              <p>
+                FitZone je energičan i ima programe za sve razine.
+                <br>Treneri su izvrsni, ali svlačionice bi mogle biti čišće.
+                <br>Unatoč tome, odlično mjesto za vježbanje! <i class="fa fa-smile-o" aria-hidden="true"></i>
+              </p>
+              <div class="stars">
+                <img src="ikone/star_orange.png" alt="Star">
+                <img src="ikone/star_orange.png" alt="Star">
+                <img src="ikone/star_orange.png" alt="Star">
+                <img src="ikone/star_orange.png" alt="Star">
+                <img src="ikone/star.png" alt="Star">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 review-text">
+            <div class="review">
+              <h4>Maja Majić</h4>
+              <p><strong>KLIJENT</strong></p>
+              <p>
+                FitZone ima sjajne grupne treninge i izvrsne trenere.
+                <br>Ponekad je gužva, ali inače odlično mjesto za vježbanje.
+                Preporučujem!
+              </p>
+              <div class="stars">
+                <img src="ikone/star_orange.png" alt="Star">
+                <img src="ikone/star_orange.png" alt="Star">
+                <img src="ikone/star_orange.png" alt="Star">
+                <img src="ikone/star_orange.png" alt="Star">
+                <img src="ikone/star.png" alt="Star">
+              </div>
+            </div>
+            <div class="review">
+              <h4>Marko Markić</h4>
+              <p><strong>KLIJENT</strong></p>
+              <p>
+                Volim raznoliku opremu i profesionalno osoblje. <br>Cijene su
+                fer, ali ormarići su ponekad prenatrpani. <br>Sve u svemu,
+                sjajno iskustvo!
+              </p>
+              <div class="stars">
+                <img src="ikone/star_orange.png" alt="Star">
+                <img src="ikone/star_orange.png" alt="Star">
+                <img src="ikone/star_orange.png" alt="Star">
+                <img src="ikone/star_orange.png" alt="Star">
+                <img src="ikone/star.png" alt="Star">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="news-section">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2>Novosti</h2>
+          <a href="#" class="read-more">Pročitaj sve novosti</a>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card news-card">
+              <img
+                src="slike/close-up-treadmill-console-with-settings.jpg"
+                class="card-img-top"
+                alt="Nova sprava"
+              >
+              <div class="card-body">
+                <h5 class="card-title">Nova sprava</h5>
+                <p class="news-date">1. ožujka 2024.</p>
+                <p class="card-text">
+                  FitZone je dodao novu spravu za vježbanje. Dođite isprobati i
+                  unaprijedite svoj trening!
+                </p>
+                <a href="#" class="read-more">Pročitaj više</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card news-card">
+              <img
+                src="slike/pexels-timmossholder-1171386.jpg"
+                class="card-img-top"
+                alt="FitZone zatvoren u srijedu"
+              >
+              <div class="card-body">
+                <h5 class="card-title">FitZone zatvoren u srijedu</h5>
+                <p class="news-date">5. ožujka 2024.</p>
+                <p class="card-text">
+                  Zbog održavanja, FitZone će biti zatvoren u srijedu.
+                </p>
+                <a href="#" class="read-more">Pročitaj više</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card news-card">
+              <img
+                src="slike/young-healthy-man-athlete.jpg"
+                class="card-img-top"
+                alt="Novi Trening Program"
+              >
+              <div class="card-body">
+                <h5 class="card-title">Novi trening program</h5>
+                <p class="news-date">9. ožujka 2024.</p>
+                <p class="card-text">
+                  Pridružite se našem novom trening programu, koji počinje ovaj
+                  tjedan. Prijavite se i osvježite svoju rutinu!
+                </p>
+                <a href="#" class="read-more">Pročitaj više</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="programs-section">
+      <div class="container content">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="nasi_programi">Naši programi</h2>
+            <h5>Individualni treninzi</h5>
+            <p>
+              Očekujte personalizirani pristup treningu uz naš tim
+              profesionalnih trenera. Izradit ćemo program koji odgovara vašim
+              ciljevima, tempom koji vam odgovara.
+            </p>
+            <h5>Programi za majke s djecom</h5>
+            <p>
+              Vježbajte bez brige! Naši programi za majke s djecom omogućuju vam
+              da ostanete aktivni dok vaša djeca uživaju u sigurnom i zabavnom
+              okruženju.
+            </p>
+          </div>
+          <div class="col-md-6 right-column">
+            <h5>Grupni treninzi</h5>
+            <p>
+              Energija i motivacija u grupi! Pridružite se našim zabavnim i
+              dinamičnim grupnim treninzima, dizajniranim za sve razine
+              iskustva.
+            </p>
+            <h5>Ostali sadržaji i usluge</h5>
+            <p>
+              FitZone nudi više od teretane. Iskoristite naše spa usluge, saune,
+              kafić i druge sadržaje koji će vaše fitness iskustvo učiniti
+              potpunim.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-4 footer-logo-container">
+            <img
+              src="ikone/utezi_logo.png"
+              alt="FitZone Logo"
+              class="footer-logo"
+            >
+            <span class="footer-logo-text"
+              ><span class="fit">Fit</span><span class="zone">Zone</span></span
+            >
+          </div>
+          <div class="col-md-3">
+            <h5>Radno vrijeme</h5>
+            <p>
+              Pon - Pet od 6.30 - 22:00<br>
+              Sub: 09:00 - 20:00<br>
+              Ned: 16:00 - 20:00
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5>Kontakt</h5>
+            <p>
+              Email: <a href="mailto:FitZone@gmail.com">FitZone@gmail.com</a><br>
+              Telefon: (+385) 12 345 6789<br>
+              Adresa: Zagrebačka 12<br>
+              Mreže: <a href="#">Facebook</a> | <a href="#">Instagram</a>
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5>Informacije</h5>
+            <p>
+              <a href="#">Prigovori</a><br>
+              <a href="#">FAQ</a><br>
+              <a href="#">Privacy Policy</a><br>
+              © 2024 Sva prava pridržana
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5>Suradnici</h5>
+            <img src="slike/polleo.jpg" alt="Polleo" class="partner-logo"><br>
+            <img
+              src="slike/Gymbeam.jpg"
+              alt="GymBeam"
+              class="mt-2 partner-logo"
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+.banner-container {
+  background-image: url("slike/close-up-dumbbells-gym\ 1.png") !important;
+}
+
+.content-section {
+  padding: 60px 0;
+}
+
+.card {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 0;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.card_header {
+  text-align: center;
+  margin: 15px 0;
+}
+.one_line_header {
+  padding-top: 22px;
+}
+.white_line {
+  height: 1px;
+  background-color: white;
+  width: 100%;
+  margin: 10px auto;
+}
+.line {
+  height: 4px;
+  width: 100%;
+  background-color: #ff9400;
+}
+.price {
+  text-align: center;
+  color: #ff9400;
+  font-weight: bold;
+}
+.description {
+  text-align: center;
+  margin: 10px 0;
+  flex-grow: 1;
+  font-weight: normal;
+}
+.custom_membership {
+  background-color: #ff9400;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding: 18px;
+  border-radius: 18px;
+  font-size: 25px;
+}
+.custom_stuff {
+  padding: 15px;
+}
+
+.btn-custom {
+  background-color: #ff9400;
+  border: none;
+  width: 80%;
+  margin: 20px auto 0;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn-custom:hover,
+.btn-custom:active,
+.btn-custom:focus {
+  background-color: #e68900 !important;
+  border-color: #e68900 !important;
+  color: white;
+  box-shadow: none;
+  outline: none;
+  font-weight: bold;
+}
+
+.footer-logo-container {
+  margin-bottom: 20px;
+}
+.card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

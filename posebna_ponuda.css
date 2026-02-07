@@ -1,0 +1,111 @@
+h2 {
+  font-weight: bold;
+}
+
+@media (max-width: 990px) {
+  h2 {
+    margin-left: 0px;
+    text-align: center;
+  }
+}
+
+img {
+  max-width: 800px;
+  max-height: 800px;
+}
+
+.banner-container {
+  background-image: url("slike/mother-with-little-son-doing-yoga-home\ 1.png") !important;
+}
+
+
+
+.playground_picture_container, .sauna_picture_container, .food_picture_container, .masage_picture_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+}
+
+.mother_program, .sauna, .food_program, .masage {
+  padding: 60px;
+  width: 100%;
+}
+
+.mother_program_heading, .food_program_heading {
+  font-weight: bold;
+  color: black; 
+}
+
+.sauna_heading, .masage_heading {
+  font-weight: bold;
+  color: white; 
+}
+
+.child_corner_img, .sauna_img, .food_corner_img, .masage_img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 15px;
+}
+
+.description_mother_corner, .description_sauna, .description_food, .description_masage {
+  display: flex;
+  align-items: flex-start; 
+  flex-direction: column;
+  justify-content: flex-start; 
+}
+
+.description_mother_corner p, .description_food p {
+  color: black; 
+  margin-top: 0; 
+}
+
+.description_sauna p, .description_masage p {
+  color: white;
+  margin-top: 0; 
+}
+
+.sauna {
+  background-image: url("./slike/sauna_background.png");
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.masage {
+  background-image: url("./slike/masaza_background.png");
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+  border-bottom: 4px solid #ff9400;
+}
+
+@media (max-width: 990px) {
+  .description_mother_corner, .description_sauna, .description_food, .description_masage {
+    margin-top: 0px;
+    padding: 0px;
+  }
+
+  .sauna_heading, .masage_heading {
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .sauna, .masage {
+    clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .food_program_heading {
+    text-align: center;
+  }
+  .food_program {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
